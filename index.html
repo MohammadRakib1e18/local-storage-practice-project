@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Local Storage Task</title>
+
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <h2>Please Contact me</h2>
+        <section>
+            <input id="name" type="text" placeholder="Enter your name" />
+            <button onclick="sendData('name')">Send Name</button>
+            <button onclick="deleteData('name')">Delete Name</button>
+        </section>
+        <section>
+            <input id="email" type="text" placeholder="Enter your abc@email" />
+            <button onclick="sendData('email')">Send Email</button>
+            <button onclick="deleteData('email')">Delete Email</button>
+        </section>
+        <section>
+            <input id="message" type="text" placeholder="Enter your message" />
+            <button onclick="sendData('message')">Send Message</button>
+            <button onclick="deleteData('message')">Delete Message</button>
+        </section>
+
+        <section>
+            <button id="send" onclick="send()">Send All Data</button>
+            <button onclick="reset()">Reset Local Storage</button>
+        </section>
+
+        <section>
+            <h4>Name: <span id="user-name"></span></h4>
+            <h4>Email: <span id="user-email"></span></h4>
+            <h4>Message: <span id="user-message"></span></h4>
+        </section>
+        <script src="app.js"></script>
+    </body>
+</html>
